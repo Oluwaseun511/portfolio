@@ -1,0 +1,377 @@
+*{
+    border: 0;
+    padding: 0;
+    list-style-type: none;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    scroll-behavior: smooth;
+}
+body{
+    background-color: rgb(57, 243, 57);
+}
+header{
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+    color: white;
+    background: rgba(6, 187, 6, 0.1);
+    backdrop-filter: blur(
+        10px
+    );
+}
+header a{
+    text-decoration: none;
+    color: white;
+}
+nav ul{
+    display: flex;
+    gap: 20px;
+}
+nav ul a:hover{
+    color: rgba(0, 128, 0, 0.493)
+}
+.menu-container{
+    display: none;
+}
+.nav-btn{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.nav-btn button{
+    background-color: green;
+    width: 100px;
+    height: 40px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+.nav-btn button:hover{
+    background-color: rgba(0, 128, 0, 0.493);
+}
+.mob{
+    display: none;
+}
+.sec1{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    margin-bottom: 20px;
+}
+.img1{
+    border-radius: 50%;
+    height: 400px;
+    width: 400px;
+    animation: FloatImage 4s ease-in-out infinite;
+}
+.img2{
+    width: 50%;
+}
+#home{
+    padding: 40px 30px;
+}
+#home:active{
+    color: rgba(0, 128, 0, 0.493)
+}
+.home-text h1{
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+.home-text h3{
+    font-size: 30px;
+}
+@keyframes FloatImage {
+    0%{
+        transform: translateY(2.4rem); 
+    }
+    50%{
+        transform: translateY(0);
+    }
+    100%{
+        transform: translateY(2.4rem);
+    }
+}
+.fa-brands{
+    font-size: 30px;
+    padding: 20px;
+}
+.fa-solid{
+    font-size: 30px;
+    padding: 20px;
+}
+.icons .fa-brands, .fa-solid{
+    border: 3px solid green;
+    padding: 10px;
+    border-radius: 50%;
+}
+.icons .fa-brands:hover, .fa-solid:hover{
+    background: rgba(0, 0, 0, 0.596);
+}
+.b2:hover{
+    box-shadow: none;
+}
+.b2{
+    width: 200px;
+    height: 50px;
+    margin-top: 30px;
+    border: 0;
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 30px;
+    background-color: green;
+    box-shadow: 1px 5px 6px rgba(0, 0, 0, 0.199);
+}
+#about{
+    padding: 20px 35px;
+}
+#about h1{
+    font-size: 50px;
+    text-align: center;
+    color: white;
+}
+.about-text{
+    color: white;
+}
+.sec2{
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    margin-bottom: 20px;
+}
+.info{
+    display: flex;
+    gap: 30px;
+    padding: 20px;
+    color: white;
+}
+#portfolio h1{
+    color: white;
+    font-size: 50px;
+    text-align: center;
+}
+.container{
+    padding: 20px 30px;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    gap: 20px;
+    padding: 0 30px 0 0;
+}
+.col{
+    border-radius: 20px;
+}
+.skills-container{
+    padding: 0 30px;
+}
+#skills h1{
+    font-size: 50px;
+    text-align: center;
+    color: white;
+}
+.progress-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding: 0 20%;
+    margin: 20px 0;
+    color: white;
+}
+.progress-container {
+    width: 100%;
+    /* max-width: 400px; */
+    background-color: #e0e0e0;
+    border-radius: 10px;
+    padding: 5px;
+    /* margin: 20px 0; */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    /* position: relative; */
+}
+
+.progress-bar {
+    height: 25px;
+    /* line-height: 25px; */
+    border-radius: 10px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    transition: width 0.5s ease-in-out;
+}
+
+.bar-1 {
+    width: 80%;
+    background: linear-gradient(90deg, #ff8c00, #ff3d00);
+}
+
+.bar-2 {
+    width: 60%;
+    background: linear-gradient(90deg, #4CAF50, #00c853);
+}
+
+.bar-3 {
+    width: 90%;
+    background: linear-gradient(90deg, #007bff, #0044cc);
+}
+
+.progress-title {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    text-align: center;
+}
+#contact{
+    margin-bottom: 50px;
+
+}
+h4{
+    font-size: 50px;
+    text-align: center;
+    color: white;
+}
+input, textarea{
+    margin: 10px;
+    width: 300px;
+    height: 50px;
+    padding-left: 20px;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    background: rgba(6, 187, 6, 0.1);
+    backdrop-filter: blur(
+        10px
+    );
+    box-shadow: 5px 5px 3px  rgba(0, 128, 0, 0.493);
+}
+textarea{
+    width: 650px;
+    height: 150px;   padding-top: 10px;
+}
+.b3{
+    width: 200px;
+    height: 50px;
+    color: white;
+    font-weight: 400;
+    font-size: 20px;
+    background-color: green;
+    border: none;
+    border-radius: 8px;
+    justify-content: center
+}
+span{
+    color: green;
+}
+.all{
+    align-items: flex-start;
+}
+form{
+    text-align: center;
+}
+footer{
+    background-color: rgb(6, 187, 6);
+    color: white;
+    padding: 50px 0;
+}
+.footer {
+    text-align: center;
+}
+.footer ul {
+    display: flex;
+    gap: 10px;
+    justify-content: center;   
+}
+.footer ul a{
+    color: white;
+    text-decoration: none;
+}
+.f-icons .fa-brands, .hi{
+    background: white;
+    padding: 10px;
+    border-radius: 50%;
+}
+.sec3{
+    color: white;
+    gap: 30px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+.card{
+    display: block;
+    text-align: center;
+}
+.sec3 h5{
+    font-size: 20px;
+}
+
+
+
+@media screen and (max-width: 600px) {
+    .sec1{
+        flex-direction: column-reverse;
+        align-items: center;
+        text-align: center;
+    }
+    .sec2{
+        flex-direction: column;
+    }
+    .info{
+        flex-direction: column;
+    }
+    .img2{
+        width: 100%;
+    }
+    .row{
+        flex-direction: column;
+        align-items: center;
+    }
+    textarea{
+        width: 300px;
+    }
+    .img1{
+        border-radius: 50%;
+        height: 300px;
+        width: 300px;
+    }
+    .desk {
+        display: none;
+      }
+    .mob {
+        display: block;
+        position: absolute;
+        left: 0;
+        background: #ffe9ca;
+        height: 300px;
+        width: 100%;
+        top: -400px;
+        transition: all 0.5s ease;
+      }
+      .fa-regular {
+        font-size: 30px;
+        color: brown;
+        cursor: pointer;
+        transition: all 0.5s ease;
+        position: absolute;
+        top: 20px;
+        right: 35px;
+      }
+      .mob i:hover {
+        transform: rotate(90deg);
+      } 
+      .mob ul {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+      }
+      .mob ul li {
+        font-size: 20px;
+      }
+      .menu-container{
+        display: block;
+      }
+}
+
